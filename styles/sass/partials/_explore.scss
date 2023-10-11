@@ -1,0 +1,75 @@
+section#explore {
+  .container {
+    background-color: $primary-dark-blue;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+    position: relative;
+
+    .explore-shape-1 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .explore-shape-2 {
+        position: absolute;
+        top: -100%;
+        left: 43%;
+    }
+
+    .explore-shape-3 {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    img {
+      flex: 1;
+      position: relative;
+      z-index: 1;
+    }
+
+    .explore-right {
+      flex: 1;
+      text-align: right;
+      padding-right: 72px;
+      padding-top: 64px;
+      position: relative;
+      z-index: 1;
+
+      h2 {
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 68px;
+        color: $primary-dark-blue;
+        text-transform: capitalize;
+
+        span {
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 54px;
+          text-transform: capitalize;
+        }
+      }
+
+      p {
+        color: $dark-80;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px;
+      }
+
+      .buttons {
+        padding-top: 40px;
+
+        .main-btn {
+            margin-left: 20px;
+        }
+      }
+    }
+  }
+}

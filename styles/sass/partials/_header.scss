@@ -1,0 +1,282 @@
+header#main-header {
+  background-color: $secondary-mon-yellow-light;
+  padding-top: 28px;
+  position: relative;
+  border-bottom-right-radius: 40px;
+  height: 695px;
+  overflow: hidden;
+  z-index: 1;
+
+  .sidebar {
+    
+  label #cancel{
+    position: absolute;
+  }
+  }
+
+  #check {
+    display: none;
+  }
+
+  #check:checked ~ .sidebar {
+    left: 0;
+  }
+
+  .container {
+    position: relative;
+    .bar, .search {
+      display: none;
+    }
+    .shape-1 {
+      z-index: -1;
+      position: absolute;
+      top: -100%;
+      left: -35%;
+    }
+
+
+    .shape-2 {
+      z-index: -1;
+      position: absolute;
+      top: 25%;
+      left: -1%;
+    }
+
+    .shape-3 {
+        z-index: -1;
+        position: absolute;
+        top: 18%;
+        left: 58%;
+    }
+
+    .shape-4 {
+        z-index: -1;
+        position: absolute;
+        top: 30%;
+        left: 55%;
+    }
+
+    .shape-5 {
+        z-index: -1;
+        position: absolute;
+        top: 31.5%;
+        left: 55%;
+    }
+
+    .shape-6 {
+        z-index: -1;
+        position: absolute;
+        top: 43%;
+        left: 45%;
+    }
+
+    .shape-7 {
+        z-index: -1;
+        position: absolute;
+        top: 30%;
+        left: 46%;
+    }
+
+    .shape-8 {
+        z-index: -1;
+        position: absolute;
+        bottom: -108%;
+        left: -18%;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: auto;
+
+      label #btn{
+        position: absolute;
+      }
+    }
+
+    ul.nav-left {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      color: $primary-dark-blue;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+    }
+
+    ul.nav-right {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: $primary-dark-blue;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+
+      &:last-child {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 23px;
+      }
+    }
+    .showcase {
+      .showcase-wrapper {
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        height: 615px;
+
+        .left-side {
+          padding-top: 80px;
+          h1 {
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 68px;
+            text-transform: capitalize;
+            color: $primary-dark-blue;
+
+            span {
+              font-size: 46px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 60px;
+              text-transform: capitalize;
+              color: $primary-dark-blue;
+            }
+          }
+
+          p {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+            color: $primary-dark-blue;
+          }
+
+          .buttons {
+            margin-top: 34px;
+            display: flex;
+            gap: 20px;
+          }
+        }
+
+        .right-side {
+          img {
+            position: absolute;
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  //   search-input
+
+  .search-form {
+    height: 40px;
+    display: inline-block;
+    border-radius: 20px;
+    background: $dark-00;
+    line-height: 40px;
+    font-size: 18px;
+    box-shadow: 0px 0px 3px #111;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+  }
+
+  .search-form span {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+  }
+  span.slens {
+    position: absolute;
+    z-index: 1;
+  }
+  input#s {
+    width: 0px;
+    margin: 0px 0px;
+    padding: 0px 0px 0px 40px;
+    border: none;
+    height: 40px;
+    vertical-align: top;
+    position: relative;
+    z-index: 2;
+    background: transparent;
+    transition: width 1s;
+  }
+
+  input#s:focus {
+    outline: none;
+    width: 280px;
+  }
+
+  .slens i {
+    color: $dark-20;
+  }
+
+  input#s + .sclose {
+    width: 0px;
+  }
+
+  input#s:focus + .sclose {
+    width: 40px;
+    cursor: pointer;
+  }
+
+  .sclose i {
+    color: red;
+  }
+
+  //   dropdown
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 200%;
+    left: -50px;
+    border: 1px solid $primary-dark-blue;
+    background-color: $dark-00;
+    box-shadow: 0 0 20px #0004;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-menu,
+  input[type="checkbox"]:checked + .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    padding: 20px;
+    border-color: $primary-dark-blue;
+  }
+
+  .dropdown-menu li {
+    padding: 0.8em 1.4em;
+    background: #eee;
+    margin-block: 0.5rem;
+    min-width: 200px;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  .dropdown-menu li:hover {
+    padding-left: 2.8em;
+    background: $primary-dark-blue;
+    color: $dark-00;
+  }
+}

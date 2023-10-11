@@ -1,0 +1,23 @@
+.container {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.main-btn {
+  all: unset;
+  box-sizing: border-box;
+  padding: 14px 28px;
+  background-color: $primary-dark-blue;
+  color: $dark-00;
+  border-radius: 57px;
+}
+
+.secondary-btn {
+    all: unset;
+    box-sizing: border-box;
+    padding: 14px 28px;
+    background-color: transparent;
+    color: $primary-dark-blue;
+    border-radius: 57px;
+    border: 1.5px solid $primary-dark-blue;
+  }

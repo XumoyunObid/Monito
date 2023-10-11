@@ -1,0 +1,58 @@
+section#knowledge {
+  .container {
+    .kn-cards {
+      a.last {
+        display: none;
+      }
+    }
+  }
+  img {
+    border-radius: 12px;
+    padding-bottom: 15px;
+  }
+
+  .kn-span {
+    padding: 2px 10px;
+    background-color: $blue-sea;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    border-radius: 28px;
+    color: $dark-00;
+    width: 90px;
+  }
+
+  .knowledge-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+
+    p {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+      color: $dark-100;
+
+      span {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px;
+        text-transform: capitalize;
+        color: $primary-dark-blue;
+      }
+    }
+
+    a.secondary-btn {
+      margin-left: auto;
+    }
+  }
+
+  .kn-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}

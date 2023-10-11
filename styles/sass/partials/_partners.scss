@@ -1,0 +1,30 @@
+section#partners {
+  .container {
+    .partners-head {
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 31px;
+
+        span {
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 36px;
+          text-transform: capitalize;
+          color: $primary-dark-blue;
+        }
+      }
+    }
+
+    .partner-cops {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

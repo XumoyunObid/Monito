@@ -12,6 +12,14 @@
   border-radius: 57px;
 }
 
+.main-btn:hover {
+  cursor: pointer;
+  border: 2.5px solid $primary-dark-blue;
+  background-color: transparent;
+  color: $primary-dark-blue;
+  padding: 12px 26px;
+}
+
 .secondary-btn {
     all: unset;
     box-sizing: border-box;
@@ -20,4 +28,10 @@
     color: $primary-dark-blue;
     border-radius: 57px;
     border: 1.5px solid $primary-dark-blue;
+  }
+
+  .secondary-btn:hover {
+    cursor: pointer;
+    background-color: $primary-dark-blue;
+    color: $dark-00;
   }

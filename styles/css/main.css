@@ -32,6 +32,14 @@
   border-radius: 57px;
 }
 
+.main-btn:hover {
+  cursor: pointer;
+  border: 2.5px solid #003459;
+  background-color: transparent;
+  color: #003459;
+  padding: 12px 26px;
+}
+
 .secondary-btn {
   all: unset;
   box-sizing: border-box;
@@ -40,6 +48,12 @@
   color: #003459;
   border-radius: 57px;
   border: 1.5px solid #003459;
+}
+
+.secondary-btn:hover {
+  cursor: pointer;
+  background-color: #003459;
+  color: #FDFDFD;
 }
 
 * {
@@ -118,6 +132,11 @@ section {
   font-style: normal;
   font-weight: 500;
   line-height: 18px;
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+  box-shadow: 0px 0px 25px 5px #FFB775;
 }
 
 .card {

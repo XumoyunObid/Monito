@@ -41,4 +41,10 @@
       line-height: 18px;
     }
   }
+
+  &:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    box-shadow: 0px 0px 25px 5px $secondary-mon-yellow-extra;
+  }
 }

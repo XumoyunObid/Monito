@@ -102,7 +102,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loader-circles 1s 3s both;
+  animation: loader-circles 1s 2s both;
 }
 
 .loader {
